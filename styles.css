@@ -1,7 +1,143 @@
+:root {
+    --Rose-800: #7a284e;
+    --Rose-50: #fff7fb;
+    --Stone-900: #312e2c;
+    --Stone-600: #5f564d;
+    --Stone-150: #e3ddd7;
+    --Stone-100: #f3e5d7;
+    --Brown-800: #854632;
+    --White: #ffffff;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 8em 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Stone-100);
+    color: var(--Stone-600);
+}
+
+main {
+    max-width: 736px;
+    width: 100%;
+    background-color: var(--White);
+    padding: 2.5em;
+    border-radius: 1.5em;
+}
+
+img {
+    width: 656px;
+    height: 300px;
+    border-radius: 0.75em;
+    margin-bottom: 2.4em;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: var(--Stone-900);
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: var(--Brown-800);
+}
+
+li {
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+}
+
+.recipe_description {
+    margin-bottom: 2em;
+}
+
+.preparation {
+    padding: 1.5em;
+    margin-bottom: 2em;
+    background-color: var(--Rose-50);
+    border-radius: 0.75em;
+}
+
+.preparation_time {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--Rose-800);
+}
+
+.preparation_list {
+    margin-left: 1em;
+    padding-left: 0.5em;
+    color: var(--Rose-800);
+}
+
+ul.preparation_list li::marker {
+    color: var(--Rose-800);
+}
+
+.ingredients {
+    margin-bottom: 2rem;
+}
+
+.ingredients_list {
+    margin-left: 1em;
+    padding-left: 0.5em;
+}
+
+ul.ingredients_list li::marker {
+    color: var(--Brown-800);
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Utility classes for font */
+.text-preset-1 {
+    font-family: "Young Serif", sans-serif;
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 0;
+    font-weight: normal;
+}
+
+.text-preset-2 {
+    font-family: "Young Serif", sans-serif;
+    font-size: 1.75rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.text-preset-3 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+.text-preset-4 {
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+.text-bold {
+    font-weight: bold;
 }
